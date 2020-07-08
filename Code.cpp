@@ -60,7 +60,7 @@ public:
 		default:
 			break;
 		}
-	... ball->getX();
+		int ballx = ball->getX();
 		int bally = ball->getY();
 		int player1x = player1->getX();
 		int player2x = player2->getX();
