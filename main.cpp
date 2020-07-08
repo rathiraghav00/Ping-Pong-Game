@@ -100,7 +100,7 @@ public:
 };
 
 
-class Game_Mangaer
+class Game_Manager
 {
 private:
     int width, height;
@@ -112,7 +112,7 @@ private:
     Game_Paddle *player2;
 public:
 
-    Game_Mangaer(int w, int h)
+    Game_Manager(int w, int h)
     {
         srand(time(NULL));
         quit = false;
@@ -126,7 +126,7 @@ public:
     }
 
 
-    ~Game_Mangaer()
+    ~Game_Manager()
     {
         delete ball, player1, player2;
     }
@@ -289,7 +289,7 @@ public:
 
 int main()
 {
-    Game_Mangaer c(50, 30);
+    Game_Manager c(50, 30);
     c.Run();
     return 0;
 }
